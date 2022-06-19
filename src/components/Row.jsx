@@ -25,13 +25,13 @@ export const Row = ({title, fetchURL, rowID}) => {
     )
 
     const sliderleft = () => {
-        var slider = document.getElementById("slider" + rowID);
-        slider.scrollleft = slider.scrollleft + 500;
+        var slider = document.getElementById('slider' + rowID);
+        slider.scrollLeft = slider.scrollLeft + 500;
     }
 
     const sliderright = () => {
-        var slider = document.getElementById("slider" + rowID);
-        slider.scrollleft = slider.scrollleft + 500;
+        var slider = document.getElementById('slider' + rowID);
+        slider.scrollLeft = slider.scrollLeft + 500;
     }
     
 
