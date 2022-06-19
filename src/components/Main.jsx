@@ -15,6 +15,10 @@ export const Main = () => {
     console.log(movies)
 
   return (
-    <div>Main</div>
+    <div>
+        <img src={movies.backdrop_path} alt=""/>
+    </div>
   )
 }
+
+export default Main
