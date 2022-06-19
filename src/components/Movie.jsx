@@ -3,7 +3,7 @@ import {FaHeart, FaRegHeart} from 'react-icons/fa'
 
 
 const Movie = (props) => {
-    const [like, setLike] = React.useState(false);
+    const [like] = React.useState(false);
 
   return (
     <div className='w-[160px] sm:w-[200px] lg:w-[180px] inline-block cursor-pointer relative p-2'>
