@@ -6,6 +6,8 @@ export const Main = () => {
 
   const [movies, setMovies] = React.useState([])
 
+  
+
     React.useEffect(() => {
         axios.get(request.requestPopular).then((response) => {
             setMovies(response.data.results)
@@ -16,9 +18,9 @@ export const Main = () => {
 
   return (
     <div>
-        <img src={movies.backdrop_path} alt=""/>
+        
     </div>
   )
 }
 
-export default Main
+export default Main;
