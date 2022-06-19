@@ -6,7 +6,7 @@ export const Main = () => {
 
   const [movies, setMovies] = React.useState([])
 
-    const movie = movies.Math.random() * movies.length
+    const movie = movies[Math.floor(Math.random() * movies.length)]
 
     React.useEffect(() => {
         axios.get(request.requestPopular).then((response) => {
@@ -18,7 +18,7 @@ export const Main = () => {
 
   return (
     <div>
-        
+         
     </div>
   )
 }
