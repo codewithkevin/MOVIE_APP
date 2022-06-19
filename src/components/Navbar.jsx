@@ -3,7 +3,7 @@ import React from 'react'
 export const Navbar = () => {
   return (
     <div className='flex items-center justify-between p-4
-    z-{100} w-full absolute'>
+    z-{100} w-full sticky'>
         <h1 className='text-red-600 text-4xl 
         font-bold cursor-pointer'>TWIFLEX</h1>
 
