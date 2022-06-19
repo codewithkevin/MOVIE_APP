@@ -6,7 +6,7 @@ export const Main = () => {
 
   const [movies, setMovies] = React.useState([])
 
-  
+    const movie = movies.Math.random() * movies.length
 
     React.useEffect(() => {
         axios.get(request.requestPopular).then((response) => {
@@ -14,7 +14,7 @@ export const Main = () => {
         })
     }, [])
 
-    console.log(movies)
+    console.log(movie)
 
   return (
     <div>
