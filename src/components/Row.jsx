@@ -16,7 +16,7 @@ export const Row = ({title, fetchURL}) => {
     const cards = movies.map((movie) => {
         return(
             <div className='w-[160px> sm:w-[240px] lg:w-[180px] inline-block cursor-pointer relative p-2'>
-                    <img src='' alt={movie?.title}/>
+                    <img src={`https://image.tmdb.org/t/p/w500/${movie?.backdrop_path}`} alt={movie?.title}/>
                     
             </div>
         )
