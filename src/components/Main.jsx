@@ -19,7 +19,7 @@ export const Main = () => {
   return (
     <div className="w-full h-[550px] text-white">
         <div className="w-full h-full">
-            <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
+            <div className="absolute w-full h-[550px] bg-gradient-to-l from-black"></div>
             <img className='w-full h-full object-cover' 
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} 
             alt={movie?.title} />
@@ -34,7 +34,10 @@ export const Main = () => {
                     </button>
                 </div>
                 <p className="ml-5 py-5 text-gray-300 text-sm">
-                    Release Date: {movie.release_date}
+                    Release Date: {movie?.release_date}
+                </p>
+                <p className="ml-5  text-gray-300 text">
+                    {movie?.overview}
                 </p>
             </div>
         </div>
