@@ -35,7 +35,7 @@ export const Main = () => {
                     <button className="border bg-gray-300 text-balck border-gray-300 py-2 px-5 ml-4">
                         Play
                     </button>
-                    <button className="border text-white border-gray-300 py-2 px-5 ml-4">
+                    <button className="border text-white border-gray-300 py-2 px-5 ml-4 hover:bg-white hover:text-black">
                         Watch Later
                     </button>
                 </div>
