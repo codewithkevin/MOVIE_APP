@@ -8,10 +8,10 @@ export const Home = () => {
     <>
         <Main />
         <Row title='Up Coming' fetchURL={request.requestUpcoming}/>
-        <Row title='Top rated' fetchURL={request.requestHorror}/>
-        <Row title='Up Coming' fetchURL={request.requestComedy}/>
-        <Row title='Up Coming' fetchURL={request.requestAction}/>
-        <Row title='Up Coming' fetchURL={request.requestNowPlaying}/>
+        <Row title='Horro' fetchURL={request.requestHorror}/>
+        <Row title='Comedy' fetchURL={request.requestComedy}/>
+        <Row title='Action' fetchURL={request.requestAction}/>
+        <Row title='Now Playing' fetchURL={request.requestNowPlaying}/>
     </>
   )
 }
