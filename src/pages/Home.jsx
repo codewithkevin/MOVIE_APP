@@ -8,7 +8,7 @@ export const Home = () => {
     <>
         <Main />
         <Row title='Up Coming' fetchURL={request.requestUpcoming}/>
-        <Row title='Up Coming' fetchURL={request.requestUpcoming}/>
+        <Row title='Top rated' fetchURL={request.requestUpcoming}/>
         <Row title='Up Coming' fetchURL={request.requestUpcoming}/>
         <Row title='Up Coming' fetchURL={request.requestUpcoming}/>
         <Row title='Up Coming' fetchURL={request.requestUpcoming}/>
