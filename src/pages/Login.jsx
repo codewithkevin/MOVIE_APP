@@ -17,7 +17,7 @@ export const Login = () => {
                     <form className='w-full flex flex-col py-4'>
                       <input type="email" name="email" placeholder="Email" className='border-2  bg-gray-900 rounded-lg px-4 py-2 text-white' /> 
                       <input type="password" name="password" placeholder="Password" className='border-2  bg-gray-900 rounded-lg px-4 py-2 mt-4 text-white'autoComplete='current-password' />
-                      <button className='bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded -lg mt-4'>Sign Up</button>
+                      <button className='bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded -lg mt-4'>Sign In</button>
                       <div className="flex justify-between items-center text-sm text-gray-600 mt-4">
                         <p>
                           <input className='mr-2' type="checkbox" /> Remeber Me
@@ -27,8 +27,8 @@ export const Login = () => {
                         </p>
                       </div>
                       <p className="py-8">
-                          <span className='text-gray-600'>Already have an account?</span>{' '}
-                          <Link to='/login'>Sign In</Link>
+                          <span className='text-gray-600'>New to Netflix?</span>{' '}
+                          <Link to='/signup'>Sign Up</Link>
                       </p>
                     </form>
                 </div>
