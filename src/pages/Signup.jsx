@@ -15,6 +15,7 @@ const Signup = () => {
     try{
       await signUp(email, password)
       navigate('/')
+      console.log(user)
     } catch(err){
       console.log(err)
     }
