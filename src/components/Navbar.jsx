@@ -5,6 +5,7 @@ import {UserAuth} from '../context/AuthContext'
 export const Navbar = () => {
   const {user, logOut} = UserAuth();
   const navigate = useNavigate();
+
   const handleLogout = async () => {
     try {
       await logOut()
@@ -21,7 +22,7 @@ export const Navbar = () => {
     z-{100} w-full sticky'>
         <Link to='/'>
           <h1 className='text-red-600 text-4xl 
-          font-bold cursor-pointer'>TWIFLEX</h1>
+          font-bold cursor-pointer'>NETFLIX</h1>
         </Link>
 
         {user?.email ? 
