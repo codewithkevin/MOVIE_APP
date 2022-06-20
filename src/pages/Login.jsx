@@ -7,17 +7,20 @@ export const Login = () => {
   
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
-  const {user, signUp} = UserAuth()
+  const [error, setError] = React.useState('')
+  const {user, signIn} = UserAuth()
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
+    
     e.preventDefault()
     try{
-      await signUp(email, password)
+      await signIn(email, password)
       navigate('/')
       console.log(user)
     } catch(err){
       console.log(err)
+      setError(err.message)
     }
   }
 
@@ -32,9 +35,16 @@ export const Login = () => {
             <div className='max-w-[450px] h-[400px] mx-auto bg-black/75 text-white'>
                 <div className='max-w-[320px] mx-auto py-16'>
                     <h1 className='text-3xl font-bold'>Sign In</h1>
-                    <form className='w-full flex flex-col py-4'>
-                      <input type="email" name="email" placeholder="Email" className='border-2  bg-gray-900 rounded-lg px-4 py-2 text-white' /> 
-                      <input type="password" name="password" placeholder="Password" className='border-2  bg-gray-900 rounded-lg px-4 py-2 mt-4 text-white'autoComplete='current-password' />
+                    {error ? <p className='bg-red-300 my-2'>{error}</p> : null}
+
+                    <form onSubmit={handleSubmit} className='w-full flex flex-col py-4'>
+                      
+                      <input onChange={(e) => setEmail(e.target.value)} 
+                      type="email" name="email" placeholder="Email" className='border-2  bg-gray-900 rounded-lg px-4 py-2 text-white' /> 
+                      
+                      <input onChange={(e) => setPassword(e.target.value)}
+                      type="password" name="password" placeholder="Password" className='border-2  bg-gray-900 rounded-lg px-4 py-2 mt-4 text-white'autoComplete='current-password' />
+                      
                       <button className='bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded -lg mt-4'>Sign In</button>
                       <div className="flex justify-between items-center text-sm text-gray-600 mt-4">
                         <p>
