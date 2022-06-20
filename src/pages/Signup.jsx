@@ -7,19 +7,18 @@ const Signup = () => {
   
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
-  const [error, setError] = React.useState('')
   const {user, signUp} = UserAuth()
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
     try{
       await signUp(email, password)
       navigate('/')
       console.log(user)
     } catch(err){
       console.log(err)
-      setError(err.message)
     }
   }
   
@@ -33,7 +32,6 @@ const Signup = () => {
             <div className='max-w-[450px] h-[400px] mx-auto bg-black/75 text-white'>
                 <div className='max-w-[320px] mx-auto py-16'>
                     <h1 className='text-3xl font-bold'>Sign Up</h1>
-                    {error && <p className='text-red-500'>Account already in use</p>}
                     <form onSubmit={handleSubmit} className='w-full flex flex-col py-4'>
                       
                       <input onChange={(e) => setEmail(e.target.value)}  
