@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   const imagesrc = "https://assets.nflxext.com/ffe/siteui/vlv3/8ee18735-ada3-45be-b383-a94701054bb9/a891cee3-5089-4ef1-bd7b-a6b2b3ee0395/GH-en-20220613-popsignuptwoweeks-perspective_alpha_website_large.jpg"
@@ -15,8 +16,20 @@ const Signup = () => {
                     <form className='w-full flex flex-col py-4'>
                       <input type="email" name="email" placeholder="Email" className='border-2  bg-gray-900 rounded-lg px-4 py-2 text-white' /> 
                       <input type="password" name="password" placeholder="Password" className='border-2  bg-gray-900 rounded-lg px-4 py-2 mt-4 text-white'autoComplete='current-password' />
+                      <button className='bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded -lg mt-4'>Sign Up</button>
+                      <div className="flex justify-between items-center text-sm text-gray-600 mt-4">
+                        <p>
+                          <input className='mr-2' type="checkbox" /> Remeber Me
+                        </p>
+                        <p>
+                          <Link to='/'>Need Help?</Link>
+                        </p>
+                      </div>
+                      <p className="py-8">
+                          <span className='text-gray-600'>Already have an account?</span>{' '}
+                          <Link to='/login'>Sign In</Link>
+                      </p>
                     </form>
-                    <button className='bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded -lg mt-4'>Sign Up</button>
                 </div>
             </div>
          </div>
