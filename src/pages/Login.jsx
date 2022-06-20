@@ -1,8 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { UserAuth } from '../context/AuthContext'
 
 export const Login = () => {
   const imagesrc = "https://assets.nflxext.com/ffe/siteui/vlv3/8ee18735-ada3-45be-b383-a94701054bb9/a891cee3-5089-4ef1-bd7b-a6b2b3ee0395/GH-en-20220613-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+  
+  const [email, setEmail] = React.useState('')
+  const [password, setPassword] = React.useState('')
+  const {user, signUp} = UserAuth()
+  const navigate = useNavigate()
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try{
+      await signUp(email, password)
+      navigate('/')
+      console.log(user)
+    } catch(err){
+      console.log(err)
+    }
+  }
+
 
   return (
     <div className="w-full h-screen">
