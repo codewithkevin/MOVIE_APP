@@ -1,8 +1,11 @@
 import React from 'react'
+import List from '../components/List'
 
-const Details = () => {
+const Details = (props) => {
   return (
-    <div>Details</div>
+    <>
+        <List />
+    </>
   )
 }
 

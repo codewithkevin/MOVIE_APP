@@ -1,11 +1,15 @@
 import React from 'react'
 import {FaHeart, FaRegHeart} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
+import List from './List'
+
 
 const Movie = (props) => {
   const [like] = React.useState(false);
   
-
+  <List
+    movie={props.movie}
+   />
   return (
     <Link to='/details'>
       <div className='w-[160px] sm:w-[200px] lg:w-[180px] inline-block cursor-pointer relative p-2'>
