@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Account from './pages/Account';
 import Signup from './pages/Signup';
 import ProtectedRoute from './components/ProtectedRoute';
+import Details from './pages/Details';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Account />
             </ProtectedRoute>
           } />
+          <Route path="/details" element={<Details />} />
         </Routes>
       </AuthContextProvider>
     </>
