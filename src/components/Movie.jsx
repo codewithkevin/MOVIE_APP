@@ -1,26 +1,23 @@
 import React from 'react'
 import {FaHeart, FaRegHeart} from 'react-icons/fa'
-import {Link} from 'react-router-dom'
-import List from './List'
-
 
 const Movie = (props) => {
   const [like] = React.useState(false);
+  const image = `https://image.tmdb.org/t/p/w500/${props.movie?.backdrop_path}`;
+  const title = props.movie?.title || props.movie?.name;
   
-  <List
-    movie={props.movie}
-   />
   return (
-    <Link to='/details'>
-      <div className='w-[160px] sm:w-[200px] lg:w-[180px] inline-block cursor-pointer relative p-2'>
+    
+    
+      <div onClick={props.Change} className='w-[160px] sm:w-[200px] lg:w-[180px] inline-block cursor-pointer relative p-2'>
 
           
-            <img className='w-full h-auto' src={`https://image.tmdb.org/t/p/w500/${props.movie?.backdrop_path}`} alt={props.movie?.title}/>
+            <img className='w-full h-auto' src={image} alt={title}/>
           
         
           <div className="absolute top-0 left-0 w-full h-full 
           hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
-              <button className='white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center'>{props.movie?.title}</button>
+              <button className='white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center'>{title}</button>
               
               <p   
               className="absolute top-4 left-4 text-gray-400">
@@ -28,7 +25,8 @@ const Movie = (props) => {
               </p>
           </div>
       </div>
-    </Link>  
+    
+     
   )
 }
 

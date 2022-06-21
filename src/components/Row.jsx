@@ -2,10 +2,13 @@ import axios from 'axios';
 import React from 'react'
 import Movie from './Movie';
 import {MdChevronLeft, MdChevronRight} from 'react-icons/md';
+import List from './List';
+import {useNavigate} from 'react-router-dom';
 
 export const Row = ({title, fetchURL, rowID}) => {
 
     const [movies, setMovies] = React.useState([]);
+    const navigate = useNavigate();
 
     
 
@@ -15,14 +18,24 @@ export const Row = ({title, fetchURL, rowID}) => {
         })
     }, [fetchURL]);
 
-    
+    function Change(){
+        navigate('/details');
+    }
 
     const cards = movies.map((movie, id) => {
+
         return(
-            <Movie key={id} movie={movie}/>
+            <Movie Change={Change} key={id} movie={movie}/>
         )
     }
     )
+    const list = movies.map((movie, id) => {   
+        return(
+            <List key={id} movie={movie}/>
+        )
+    })
+    console.log(list);
+    
 
     const sliderleft = () => {
         var slider = document.getElementById('slider' + rowID);
