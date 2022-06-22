@@ -1,3 +1,25 @@
+# About 
+Netflix Clone with React 
+
+# Tools 
+<ul>
+  <li>React</li>
+  <li>Tailwind</li>
+  <li>Firebase</li>
+</ul>
+
+# Topics Mastered 
+<ul>
+  <li>Auth with Firebase <li>
+  <li>Routes </li>
+  <li>API calls with Axios </li>
+</ul>
+
+# LINK
+<a href="https://twiflix.netlify.app/">Click Me</a>
+
+# View 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
