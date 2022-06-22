@@ -10,9 +10,9 @@ Netflix Clone with React
 
 # Topics Mastered 
 <ul>
-  <li>Auth with Firebase <li>
-  <li>Routes </li>
-  <li>API calls with Axios </li>
+  <li>Auth with Firebase<li>
+  <li>Routes</li>
+  <li>API calls with Axios</li>
 </ul>
 
 # LINK
