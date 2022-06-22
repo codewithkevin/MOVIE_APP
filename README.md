@@ -19,6 +19,12 @@ Netflix Clone with React
 <a href="https://twiflix.netlify.app/">Click Me</a>
 
 # View 
+<img src="./screenshot/photo_2022-06-22_01-15-49.jpg" alt="">
+    <img src="./screenshot/Screenshot (142).png" alt="">
+    <img src="./screenshot/Screenshot (143).png" alt="">
+    <img src="./screenshot/photo_2022-06-22_01-16-01.jpg" alt="">
+    <img src="./screenshot/photo_2022-06-22_01-15-58.jpg" alt="">
+    <img src="./screenshot/photo_2022-06-22_01-15-53.jpg" alt="">
 
 # Getting Started with Create React App
 
