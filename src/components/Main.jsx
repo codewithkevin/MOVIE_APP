@@ -33,9 +33,7 @@ export const Main = () => {
             <div className='w-full top-[20%] p-4 ml-5 md:p-8 absolute'>
                     <h1 className="text-3xl ml-5 mb-2 md:text-5xl">{movie?.title}</h1>
                 <div>
-                    <button className="border bg-gray-300 text-balck border-gray-300 py-2 px-5 ml-4">
-                        Play
-                    </button>
+                    
                     <button className="border text-white border-gray-300 py-2 px-5 ml-4 hover:bg-white hover:text-black">
                         Watch Later
                     </button>
