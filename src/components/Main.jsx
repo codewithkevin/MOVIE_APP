@@ -9,7 +9,8 @@ export const Main = () => {
     const movie = movies[Math.floor(Math.random() * movies.length)]
 
     React.useEffect(() => {
-        axios.get(request.requestPopular).then((response) => {
+        axios.get(request.requestPopular)
+        .then((response) => {
             setMovies(response.data.results)
         })
     }, [])

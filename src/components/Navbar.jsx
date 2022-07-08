@@ -19,10 +19,10 @@ export const Navbar = () => {
       
   return (
     <div className='flex items-center justify-between p-4
-    z-{100} w-full sticky'>
+    z-{100} w-full bg-gray-600 sticky'>
         <Link to='/'>
-          <h1 className='text-red-600 text-4xl 
-          font-bold cursor-pointer'>NETFLIX</h1>
+          <h1 className='text-white-600 text-4xl 
+          font-bold cursor-pointer'>MOVIE PACK</h1>
         </Link>
 
         {user?.email ? 
@@ -32,7 +32,7 @@ export const Navbar = () => {
           </Link>
     
           
-            <button onClick={handleLogout} className='bg-red-600 px-6 py-2
+            <button onClick={handleLogout} className='bg-blue-600 px-6 py-2
             rounded cursor-pointer text-white'>Log Out</button>
                 
         </div>
@@ -43,7 +43,7 @@ export const Navbar = () => {
           </Link>
     
           <Link to='/signup'>
-            <button className='bg-red-600 px-6 py-2
+            <button className='bg-blue-600 px-6 py-2
             rounded cursor-pointer text-white'>Sign Up</button>
           </Link>       
         </div>}
