@@ -21,7 +21,7 @@ export const Navbar = () => {
     <div className='flex items-center justify-between p-4
     z-{100} w-full bg-gray-600 sticky'>
         <Link to='/'>
-          <h1 className='text-white-600 text-4xl 
+          <h1 className='text-white text-4xl 
           font-bold cursor-pointer'>MOVIE PACK</h1>
         </Link>
 
